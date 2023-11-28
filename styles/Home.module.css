@@ -25,11 +25,47 @@
   align-items: center;
   flex-grow: 1;
 }
-
-.title a {
-  color: #0070f3;
+.title  {
+  font-family: "San Francisco", sans-serif;
+  letter-spacing: -4px !important;
+  font-smooth: auto;
+  font-size: 6rem !important;
   text-decoration: none;
+  background: linear-gradient(90deg, #ffffff, #c3b8f9, #ffffff, #aed9ae, #ffffff, #c3b8f9, #ffffff);
+  background-size: 400% 100%; /* Increase the size of the gradient to cover the entire text */
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 12s infinite linear;
+ 
 }
+
+
+@keyframes shimmer {
+  /* Starting point of the animation */
+  0% {
+    background-position: 100% 0; /* Initially, the background is positioned 200% to the right */
+  }
+
+ 
+  /* 25% {
+    background-position: -150% 0; 
+  }
+
+  50% {
+    background-position: 200% 0; 
+  }
+
+  75% {
+    background-position: -100% 0; 
+  } */
+
+  
+  100% {
+    background-position: -100% 0; 
+  }
+}
+
 
 .title a:hover,
 .title a:focus,
@@ -42,6 +78,7 @@
   line-height: 1.15;
   font-size: 4rem;
 }
+  
 
 .title,
 .description {
@@ -55,25 +92,40 @@
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  display: grid;
+  gap: 2rem;
+  max-width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-/* Home.module.css */
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .card {
-  margin: 1rem;
-  padding: 1.5rem;
+  padding: 2rem;
   text-align: left;
   color: #c0c0c0; /* Silvery color */
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
-  max-width: 300px;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -127,10 +179,43 @@
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
+.projectLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.codeButton,
+.liveButton {
+  font-size: 20px;
+  padding: 0.5rem 1.5rem; /* Increased padding to make buttons larger */
+  border: 1px solid #C0C0C0; /* Added silver border */
+  border-radius: 5px;
+  
+  background-color: #000000; /* Changed background color to black */
+  color: #C0C0C0; /* Changed text color to silver */
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s; /* Added transition for hover and click effects */
+  z-index: 99;
+  font-weight: light;
+}
+
+.codeButton:hover,
+.liveButton:hover {
+  /* background-color: #808080;  */
+  /* Changed hover color to a darker shade of silver */
+  transform: scale(1.01); /* Added lift effect on hover */
+}
+
+.codeButton:active,
+.liveButton:active {
+  transform: translateY(1px); /* Added press down effect on click */
+}
 
 .logo {
   height: 1em;
