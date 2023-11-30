@@ -1,0 +1,57 @@
+
+  
+  .modal {
+    position: fixed;
+    top: 28px;
+    left: 140px;
+    margin: 0;
+    /* transform: translate(-50%, -50%); */
+    padding: 6px 16px;
+    background: black;
+    border: 0.25px solid #ccc;
+    border-radius: 6px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(10px);
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .container {
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+        }
+    }
+    @media (max-width: 767px){
+    left: 32px;;
+    }
+  }
+  
+  .mailOptions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    
+  }
+  
+  .mailOptions li {
+    background-color: black;
+    color: white;
+    margin: 12px 0;
+    padding: 10px;
+    border: 0.25px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 999;
+  }
+  
+
+.mailOptions li:hover {
+  transform: scale(1.01);
+}
+
+.mailOptions li:active {
+  transform: translateY(1px); 
+}
+  

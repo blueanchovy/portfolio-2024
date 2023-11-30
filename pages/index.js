@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import styles from '../styles/Home.module.css';
-import Header from '../components/Header';
+import DefaultLayout from '../layouts/DefaultLayout';
 
 export default function Home() {
-  const cardRefs = Array.from({ length: 3 }, () => useRef(null)); // Create an array of refs, one for each card
+  const cardRefs = Array.from({ length: 3 }, () => useRef(null)); 
 
   useEffect(() => {
     function handleMouseMove(event, cardRef) {
@@ -44,15 +44,16 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
       </Head>
-      <Header />
+      <DefaultLayout>
       <main className={styles.main}>
         
         <h1 className={styles.title}>Manish Jha</h1>
+        <h1 className={styles.subtitle}>Frontend focused Software Engineer</h1>
 
         <div className={styles.grid}>
           <div className={styles.card} ref={cardRefs[0]}>
             <Image src="/project1.png" alt="Project 1" width={300} height={200} />
-            <h2>Project 1</h2>
+            <h3>Project 1</h3>
             <p>Technologies used: React, JavaScript, Git</p>
             <p>Salient features: Feature 1, Feature 2, Feature 3</p>
             <div className={styles.projectLinks}>
@@ -62,7 +63,7 @@ export default function Home() {
           </div>
           <div className={styles.card} ref={cardRefs[1]}>
             <Image src="/project2.png" alt="Project 2" width={300} height={200} />
-            <h2>Project 2</h2>
+            <h3>Project 2</h3>
             <p>Technologies used: React, JavaScript, Git</p>
             <p>Salient features: Feature 1, Feature 2, Feature 3</p>
             <div className={styles.projectLinks}>
@@ -72,7 +73,7 @@ export default function Home() {
           </div>
           <div className={styles.card} ref={cardRefs[2]}>
             <Image src="/project3.png" alt="Project 3" width={300} height={200} />
-            <h2>Project 3</h2>
+            <h3>Project 3</h3>
             <p>Technologies used: React, JavaScript, Git</p>
             <p>Salient features: Feature 1, Feature 2, Feature 3</p>
             <div className={styles.projectLinks}>
@@ -89,19 +90,9 @@ export default function Home() {
           </div>
         </section>
       </main>
+      </DefaultLayout>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      
     </div>
   );
 }
