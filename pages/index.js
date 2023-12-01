@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import styles from '../styles/Home.module.css';
 import DefaultLayout from '../layouts/DefaultLayout';
+import { projects } from '../utils/hooks/projectData';
 
 export default function Home() {
-  const cardRefs = Array.from({ length: 3 }, () => useRef(null)); 
+  const cardRefs = Array.from({ length: projects.length }, () => useRef(null)); 
 
   useEffect(() => {
     function handleMouseMove(event, cardRef) {
@@ -49,50 +49,50 @@ export default function Home() {
         
         <h1 className={styles.title}>Manish Jha</h1>
         <h1 className={styles.subtitle}>Frontend focused Software Engineer</h1>
-
+        <section className={styles.projects} id="projects">
+        <h2>Projects</h2>
         <div className={styles.grid}>
-          <div className={styles.card} ref={cardRefs[0]}>
-            <Image src="/project1.png" alt="Project 1" width={300} height={200} />
-            <h3>Project 1</h3>
-            <p>Technologies used: React, JavaScript, Git</p>
-            <p>Salient features: Feature 1, Feature 2, Feature 3</p>
-            <div className={styles.projectLinks}>
-              <button className={styles.codeButton}><a href="#">Code</a></button>
-              <button className={styles.liveButton}><a href="#">Live</a></button>
-            </div>
-          </div>
-          <div className={styles.card} ref={cardRefs[1]}>
-            <Image src="/project2.png" alt="Project 2" width={300} height={200} />
-            <h3>Project 2</h3>
-            <p>Technologies used: React, JavaScript, Git</p>
-            <p>Salient features: Feature 1, Feature 2, Feature 3</p>
-            <div className={styles.projectLinks}>
-              <button className={styles.codeButton}><a href="#">Code</a></button>
-              <button className={styles.liveButton}><a href="#">Live</a></button>
-            </div>
-          </div>
-          <div className={styles.card} ref={cardRefs[2]}>
-            <Image src="/project3.png" alt="Project 3" width={300} height={200} />
-            <h3>Project 3</h3>
-            <p>Technologies used: React, JavaScript, Git</p>
-            <p>Salient features: Feature 1, Feature 2, Feature 3</p>
-            <div className={styles.projectLinks}>
-              <button className={styles.codeButton}><a href="#">Code</a></button>
-              <button className={styles.liveButton}><a href="#">Live</a></button>
-            </div>
-          </div>
-        </div>
-
-        <section className={styles.projects}>
-          {/* Add project cards as needed */}
-          <div className={styles.projectCard}>
+        {projects.map((data, index) => {
+          const isNetlify = (data.liveLink).includes('netlify');
+              return <>
+              <div className={styles.card} ref={cardRefs[index]} key={index}>
             
+            {/* <Image src="/project1.png" alt="Project 1" width={300} height={200} /> */}
+            <h3>{data?.name}</h3>
+            <p>{data.description}</p>
+            <div className={styles.projectLinks}>
+              <button className={styles.codeButton}>
+                <a href={data.sourceLink} target="_blank" rel="noopener noreferrer" className={styles.links}>
+                  Code
+                </a>
+              </button>
+              {data.liveLink ? 
+                <button className={styles.liveButton}>
+                <a
+                  href={isNetlify ? "#projects" : data.liveLink}
+                  target={isNetlify ? "_self" : "_blank"}
+                  rel="noopener noreferrer"
+                  className={styles.links}
+                  style={isNetlify ? { textDecoration: 'line-through' } : {}}
+                >
+                  Live
+                </a>
+              </button>
+              
+                : 
+                <button className={styles.liveButton} target="_blank" rel="noopener noreferrer">
+                  <a href={data.demoLink} className={styles.links}>
+                    Demo
+                  </a>
+                </button>}
+            </div>
           </div>
+              </>
+            })}
+        </div>
         </section>
       </main>
       </DefaultLayout>
-
-      
     </div>
   );
 }

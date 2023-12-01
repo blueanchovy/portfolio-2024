@@ -7,6 +7,7 @@
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: saturate(180%) blur(10px);
     width: 100%;
+    
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         .header {
           -webkit-backdrop-filter: blur(10px);
@@ -21,6 +22,14 @@
         padding: 12px 8px;
     }
     
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1512px;
+    margin: 0 auto;
 }
 
 .resumeButton {
