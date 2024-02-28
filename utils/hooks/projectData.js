@@ -8,13 +8,6 @@ export const projects = [
       sourceLink: "https://github.com/blueanchovy/slack-clone/"
     },
     {
-      name: "Email Client Website",
-      date: "January, 2022",
-      description: "Features: User authentication via Google Account, Send mail(to self, updated in feed), Open received mail Tech: ReactJS, Redux, React-router, CSS3, Firestore Database, Firebase Hosting, Material UI",
-      liveLink: "https://manish-p3-gc.web.app/",
-      sourceLink: "https://github.com/blueanchovy/gmail-clone"
-    },
-    {
       name: "Cred.com - UI Clone",
       date: "February, 2022",
       description: "A fully responsive static clone of the Indian Startup - Cred‘s website: cred.club. Tech: ReactJS, CSS3, CSS media queries, Netlify Hosting",
@@ -27,6 +20,20 @@ export const projects = [
       description: "Features: Search and Filter properties using attributes, Server Side Rendering, Static site generation, File based routing Tech: NextJS, Chakra CSS, Chakra UI, Bayut Real Estate API, Vercel Hosting",
       liveLink: "https://real-estate-henna-delta.vercel.app/",
       sourceLink: "https://github.com/blueanchovy/real-estate"
+    },
+    {
+      name: "Sample Take Home Assignment",
+      date: "November, 2023",
+      description: "Built for Loch Research, translated from Figma to code. Features: Horizontal Drag, Responsiveness, HTML Dialog Tech: NextJS, SCSS, Media Queries, Vercel Hosting",
+      liveLink: "https://loch-assignment-ten.vercel.app/",
+      sourceLink: "https://github.com/blueanchovy/loch-assignment"
+    },
+    {
+      name: "Email Client Website",
+      date: "January, 2022",
+      description: "Features: User authentication via Google Account, Send mail(to self, updated in feed), Open received mail Tech: ReactJS, Redux, React-router, CSS3, Firestore Database, Firebase Hosting, Material UI",
+      liveLink: "https://manish-p3-gc.web.app/",
+      sourceLink: "https://github.com/blueanchovy/gmail-clone"
     },
     {
       name: "How well do you know me?",

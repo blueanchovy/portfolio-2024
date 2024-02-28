@@ -63,13 +63,13 @@ export default function Home() {
             Github <GithubIcon />
           </a>
           <a href="https://www.linkedin.com/in/manishkumarjha-1337" target="_blank" rel="noopener noreferrer" title="Connect with me on Linkedin">
-            Linkedin <LinkedinIcon />
+            LinkedIn <LinkedinIcon />
           </a>
           <a href="https://wa.me/9071675221" target="_blank" rel="noopener noreferrer" title="Message me on Whatsapp">
-            Whatsapp <ChatIcon />
+            WhatsApp <ChatIcon />
           </a>
           <div title="See my Resumé" onClick={isMobileOrSmaller ? () => window.location.href = 'https://drive.google.com/file/d/1IxLnnIX9P9ypGEAwwRP02c0VoTo_HDRE/view?usp=sharing': () => setIsResumeOpen(!isResumeOpen) }>
-            Resume <DocIcon />
+            Résumé <DocIcon />
           </div>
         </div>
         <div className={styles.genButtons}>
