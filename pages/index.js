@@ -1,11 +1,19 @@
 import Head from 'next/head';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import DefaultLayout from '../layouts/DefaultLayout';
 import { projects } from '../utils/hooks/projectData';
+import GithubIcon from '../components/icons/GithubIcon';
+import LinkedinIcon from '../components/icons/LinkedinIcon';
+import ChatIcon from '../components/icons/ChatIcon';
+import ResumeModal from '../components/Home/ResumeModal';
+import DocIcon from '../components/icons/DocIcon';
+import useDevice from '../utils/hooks/useDevice';
 
 export default function Home() {
   const cardRefs = Array.from({ length: projects.length }, () => useRef(null)); 
+  const {isMobileOrSmaller} = useDevice()
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   useEffect(() => {
     function handleMouseMove(event, cardRef) {
@@ -49,6 +57,37 @@ export default function Home() {
         
         <h1 className={styles.title}>Manish Jha</h1>
         <h1 className={styles.subtitle}>Frontend focused Software Engineer</h1>
+        <div className={styles.flexCol} style={{ fontSize: '1.1rem', alignItems: 'center', justifyContent: 'center' }}>
+          <a href="https://github.com/blueanchovy" target="_blank" rel="noopener noreferrer" title="Check out my Github">
+            Github <GithubIcon />
+          </a>
+          <a href="https://www.linkedin.com/in/manishkumarjha-1337" target="_blank" rel="noopener noreferrer" title="Connect with me on Linkedin">
+            Linkedin <LinkedinIcon />
+          </a>
+          <a href="https://wa.me/9071675221" target="_blank" rel="noopener noreferrer" title="Message me on Whatsapp">
+            Whatsapp <ChatIcon />
+          </a>
+          <div title="See my Resumé" onClick={isMobileOrSmaller ? () => window.location.href = 'https://drive.google.com/file/d/1IxLnnIX9P9ypGEAwwRP02c0VoTo_HDRE/view?usp=sharing': () => setIsResumeOpen(!isResumeOpen) }>
+            Resume <DocIcon />
+          </div>
+        </div>
+        <div className={styles.genButtons}>
+          <button className={styles.codeButton}>
+            <a href="#projects" className={styles.links}>
+              View Projects
+            </a>
+          </button>
+          {/* <button className={styles.liveButton}>
+            <a href="#experience" className={styles.links}>
+              View Experience
+            </a>
+          </button> */}
+          <button className={styles.liveButton}>
+            <a href="https://stayvista.com" target="_blank" rel="noopener noreferrer" className={styles.links}>
+              See Work
+            </a>
+          </button>
+        </div>
         <section className={styles.projects} id="projects">
         <h2>Projects</h2>
         <div className={styles.grid}>
@@ -59,7 +98,7 @@ export default function Home() {
             
             {/* <Image src="/project1.png" alt="Project 1" width={300} height={200} /> */}
             <h3>{data?.name}</h3>
-            <p>{data.description}</p>
+            <p dangerouslySetInnerHTML={{ __html: data.description.replace(/Tech/g, '<br />Tech') }}></p>
             <div className={styles.projectLinks}>
               <button className={styles.codeButton}>
                 <a href={data.sourceLink} target="_blank" rel="noopener noreferrer" className={styles.links}>
@@ -91,6 +130,7 @@ export default function Home() {
             })}
         </div>
         </section>
+        {isResumeOpen && <ResumeModal  isOpen={isResumeOpen} setIsOpen={setIsResumeOpen}/> }
       </main>
       </DefaultLayout>
     </div>

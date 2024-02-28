@@ -1,11 +1,5 @@
 export const projects = [
-    {
-      name: "Real Estate Website",
-      date: "July, 2022",
-      description: "Features: Search and Filter properties using attributes, Server Side Rendering, Static site generation, File based routing Tech: NextJS, Chakra CSS, Chakra UI, Bayut Real Estate API, Vercel Hosting",
-      liveLink: "https://real-estate-henna-delta.vercel.app/",
-      sourceLink: "https://github.com/blueanchovy/real-estate"
-    },
+    
     {
       name: "Business Messaging Website",
       date: "January, 2022",
@@ -14,18 +8,11 @@ export const projects = [
       sourceLink: "https://github.com/blueanchovy/slack-clone/"
     },
     {
-      name: "Social Media Website",
+      name: "Email Client Website",
       date: "January, 2022",
-      description: "Features: Sign Up and Sign In with Email, Upload post with caption to feed, comment on posts Tech: ReactJS, CSS3, Material UI, Firestore Database, Firebase Hosting & Storage",
-      liveLink: "https://insta-clone-2ec96.web.app/",
-      sourceLink: "https://github.com/blueanchovy/insta-clone"
-    },
-    {
-      name: "Professional Social Media Website",
-      date: "January, 2022",
-      description: "Features: Sign Up and Sign In with Email, Send Post, See Posts in feed Tech: ReactJS, CSS3, Redux, Material UI, Firestore Database, Firebase Hosting",
-      liveLink: "https://manish-linkedin-clone.web.app/",
-      sourceLink: "https://github.com/blueanchovy/linkedin-clone"
+      description: "Features: User authentication via Google Account, Send mail(to self, updated in feed), Open received mail Tech: ReactJS, Redux, React-router, CSS3, Firestore Database, Firebase Hosting, Material UI",
+      liveLink: "https://manish-p3-gc.web.app/",
+      sourceLink: "https://github.com/blueanchovy/gmail-clone"
     },
     {
       name: "Cred.com - UI Clone",
@@ -35,11 +22,11 @@ export const projects = [
       sourceLink: "https://github.com/blueanchovy/cred-clone"
     },
     {
-      name: "Email Client Website",
-      date: "January, 2022",
-      description: "Features: User authentication via Google Account, Send mail(to self, updated in feed), Open received mail Tech: ReactJS, Redux, React-router, CSS3, Firestore Database, Firebase Hosting, Material UI",
-      liveLink: "https://manish-p3-gc.web.app/",
-      sourceLink: "https://github.com/blueanchovy/gmail-clone"
+      name: "Real Estate Website",
+      date: "July, 2022",
+      description: "Features: Search and Filter properties using attributes, Server Side Rendering, Static site generation, File based routing Tech: NextJS, Chakra CSS, Chakra UI, Bayut Real Estate API, Vercel Hosting",
+      liveLink: "https://real-estate-henna-delta.vercel.app/",
+      sourceLink: "https://github.com/blueanchovy/real-estate"
     },
     {
       name: "How well do you know me?",
@@ -117,7 +104,21 @@ export const projects = [
       description: "A website that helps the user calculate how much profit or loss he/she is making on a purchased stock in percentage & absolute values.",
       liveLink: "https://manish-profit-loss.netlify.app/",
       sourceLink: "https://github.com/blueanchovy/neog-camp-profit-loss-app"
-    }
+    },
+    {
+      name: "Social Media Website",
+      date: "January, 2022",
+      description: "Features: Sign Up and Sign In with Email, Upload post with caption to feed, comment on posts Tech: ReactJS, CSS3, Material UI, Firestore Database, Firebase Hosting & Storage",
+      liveLink: "https://insta-clone-2ec96.web.app/",
+      sourceLink: "https://github.com/blueanchovy/insta-clone"
+    },
+    {
+      name: "Professional Social Media Website",
+      date: "January, 2022",
+      description: "Features: Sign Up and Sign In with Email, Send Post, See Posts in feed Tech: ReactJS, CSS3, Redux, Material UI, Firestore Database, Firebase Hosting",
+      liveLink: "https://manish-linkedin-clone.web.app/",
+      sourceLink: "https://github.com/blueanchovy/linkedin-clone"
+    },
   ];
 
   
