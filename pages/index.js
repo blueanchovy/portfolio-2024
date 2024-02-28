@@ -11,6 +11,7 @@ import DocIcon from '../components/icons/DocIcon';
 import useDevice from '../utils/hooks/useDevice';
 
 export default function Home() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const cardRefs = Array.from({ length: projects.length }, () => useRef(null)); 
   const {isMobileOrSmaller} = useDevice()
   const [isResumeOpen, setIsResumeOpen] = useState(false);
