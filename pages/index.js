@@ -16,6 +16,14 @@ export default function Home() {
   const {isMobileOrSmaller} = useDevice()
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
+  function scrollToProjects(event) {
+    event.preventDefault();
+  
+    const projectsSection = document.getElementById('projects');
+    projectsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+  
+
   useEffect(() => {
     function handleMouseMove(event, cardRef) {
       const card = cardRef.current;
@@ -72,9 +80,9 @@ export default function Home() {
             Résumé <DocIcon />
           </div>
         </div>
-        <div className={styles.genButtons}>
-          <button className={styles.codeButton}>
-            <a href="#projects" className={styles.links}>
+        <div className={styles.genButtons} >
+          <button className={styles.codeButton} onClick={scrollToProjects}>
+            <a href="#projects" className={styles.links} >
               View Projects
             </a>
           </button>
@@ -99,7 +107,7 @@ export default function Home() {
             
             {/* <Image src="/project1.png" alt="Project 1" width={300} height={200} /> */}
             <h3>{data?.name}</h3>
-            <p dangerouslySetInnerHTML={{ __html: data.description.replace(/Tech/g, '<br />Tech') }}></p>
+            <p dangerouslySetInnerHTML={{ __html: data.description.replace(/Tech/g, '<br />Tech').replace(/(?<!^)Features/g, '<br />Features') }}></p>
             <div className={styles.projectLinks}>
               <button className={styles.codeButton}>
                 <a href={data.sourceLink} target="_blank" rel="noopener noreferrer" className={styles.links}>

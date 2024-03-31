@@ -1,7 +1,14 @@
 export const projects = [
+  {
+    name: "Mini PayTM (FullStack)",
+    date: "February, 2024",
+    description: "A payments website UI and API routes with JWT Authorization middleware. Features: Sign-In & Sign-Up, View Balance, View All Users, Send Money, Protected Routes Tech: ReactJS(Vite), ExpressJS, NodeJS, MongoDB, Mongoose, TailwindCSS, React-Router, REST API, JWT",
+    liveLink: "netlify",
+    sourceLink: "https://github.com/blueanchovy/paytm"
+  },
     
     {
-      name: "Business Messaging Website",
+      name: "Mini Slack",
       date: "January, 2022",
       description: "Features: Create channel, Send Messages, Switch channels, Read other’s messages, Google Authentication Tech: ReactJS, Redux, React-Router, Styled Components, Material UI, Firestore Database, Firebase Hosting",
       liveLink: "https://manish-slack-clone.web.app/",
@@ -10,16 +17,23 @@ export const projects = [
     {
       name: "Cred.com - UI Clone",
       date: "February, 2022",
-      description: "A fully responsive static clone of the Indian Startup - Cred‘s website: cred.club. Tech: ReactJS, CSS3, CSS media queries, Netlify Hosting",
+      description: "A fully responsive static clone of an Indian Startup‘s website (Cred): cred.club. Tech: ReactJS, CSS3, CSS media queries, Netlify Hosting",
       liveLink: "https://cred-clone-seven.vercel.app/",
       sourceLink: "https://github.com/blueanchovy/cred-clone"
     },
     {
-      name: "Real Estate Website",
+      name: "Estatery: Real Estate Listing Website",
       date: "July, 2022",
       description: "Features: Search and Filter properties using attributes, Server Side Rendering, Static site generation, File based routing Tech: NextJS, Chakra CSS, Chakra UI, Bayut Real Estate API, Vercel Hosting",
       liveLink: "https://real-estate-henna-delta.vercel.app/",
       sourceLink: "https://github.com/blueanchovy/real-estate"
+    },
+    {
+      name: "Gmail UI Clone",
+      date: "January, 2022",
+      description: "Features: User authentication via Google Account, Send mail(to self, updated in feed), Open received mail Tech: ReactJS, Redux, React-router, CSS3, Firestore Database, Firebase Hosting, Material UI",
+      liveLink: "https://manish-p3-gc.web.app/",
+      sourceLink: "https://github.com/blueanchovy/gmail-clone"
     },
     {
       name: "Sample Take Home Assignment",
@@ -27,13 +41,6 @@ export const projects = [
       description: "Built for Loch Research, translated from Figma to code. Features: Horizontal Drag, Responsiveness, HTML Dialog Tech: NextJS, SCSS, Media Queries, Vercel Hosting",
       liveLink: "https://loch-assignment-ten.vercel.app/",
       sourceLink: "https://github.com/blueanchovy/loch-assignment"
-    },
-    {
-      name: "Email Client Website",
-      date: "January, 2022",
-      description: "Features: User authentication via Google Account, Send mail(to self, updated in feed), Open received mail Tech: ReactJS, Redux, React-router, CSS3, Firestore Database, Firebase Hosting, Material UI",
-      liveLink: "https://manish-p3-gc.web.app/",
-      sourceLink: "https://github.com/blueanchovy/gmail-clone"
     },
     {
       name: "How well do you know me?",
