@@ -68,7 +68,7 @@ export default function Home() {
           <a href="https://wa.me/9071675221" target="_blank" rel="noopener noreferrer" title="Message me on Whatsapp">
             WhatsApp <ChatIcon />
           </a>
-          <div title="See my Resumé" onClick={isMobileOrSmaller ? () => window.location.href = 'https://www.overleaf.com/read/hxxnsptgyjck#27e859': () => setIsResumeOpen(!isResumeOpen) }>
+          <div title="See my Resumé" onClick={ () => setIsResumeOpen(!isResumeOpen) }>
             Résumé <DocIcon />
           </div>
         </div>
