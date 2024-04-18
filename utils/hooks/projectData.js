@@ -6,13 +6,12 @@ export const projects = [
     liveLink: "netlify",
     sourceLink: "https://github.com/blueanchovy/paytm"
   },
-    
-    {
-      name: "Mini Slack",
-      date: "January, 2022",
-      description: "Features: Create channel, Send Messages, Switch channels, Read other’s messages, Google Authentication Tech: ReactJS, Redux, React-Router, Styled Components, Material UI, Firestore Database, Firebase Hosting",
-      liveLink: "https://manish-slack-clone.web.app/",
-      sourceLink: "https://github.com/blueanchovy/slack-clone/"
+  {
+      name: "Estatery: Real Estate Listing Website",
+      date: "July, 2022",
+      description: "Features: Search and Filter properties using attributes, Server Side Rendering, Static site generation, File based routing Tech: NextJS, Chakra CSS, Chakra UI, Bayut Real Estate API, Vercel Hosting",
+      liveLink: "https://real-estate-henna-delta.vercel.app/",
+      sourceLink: "https://github.com/blueanchovy/real-estate"
     },
     {
       name: "Cred.com - UI Clone",
@@ -22,12 +21,14 @@ export const projects = [
       sourceLink: "https://github.com/blueanchovy/cred-clone"
     },
     {
-      name: "Estatery: Real Estate Listing Website",
-      date: "July, 2022",
-      description: "Features: Search and Filter properties using attributes, Server Side Rendering, Static site generation, File based routing Tech: NextJS, Chakra CSS, Chakra UI, Bayut Real Estate API, Vercel Hosting",
-      liveLink: "https://real-estate-henna-delta.vercel.app/",
-      sourceLink: "https://github.com/blueanchovy/real-estate"
+      name: "Mini Slack",
+      date: "January, 2022",
+      description: "Features: Create channel, Send Messages, Switch channels, Read other’s messages, Google Authentication Tech: ReactJS, Redux, React-Router, Styled Components, Material UI, Firestore Database, Firebase Hosting",
+      liveLink: "https://manish-slack-clone.web.app/",
+      sourceLink: "https://github.com/blueanchovy/slack-clone/"
     },
+    
+    
     {
       name: "Gmail UI Clone",
       date: "January, 2022",
