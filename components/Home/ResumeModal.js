@@ -52,7 +52,7 @@ const ResumeModal = ({isOpen, setIsOpen }) => {
       {/* <iframe src="https://docs.google.com/document/d/e/2PACX-1vQQ4x2pUiEBT6lspxO1NXoAlubzBBlyA4m3Q_YWpe--8ow4jQxlY720xVbkRXrHbPuQm6hxB2ivZkGi/pub?embedded=true" className={styles.iframe}></iframe> */}
       {/* <embed type="application/x-google-chrome-pdf" src="https://drive.google.com/file/d/1SFnyp1KNmA2smSZdmoPQ3_nfdLfcLUKW/view?usp=drive_link" width="100%" height="100%"></embed> */}
       {/* <embed type="application/x-google-chrome-pdf" src="https://docs.google.com/document/d/e/2PACX-1vQQ4x2pUiEBT6lspxO1NXoAlubzBBlyA4m3Q_YWpe--8ow4jQxlY720xVbkRXrHbPuQm6hxB2ivZkGi/pub?embedded=true" width="100%" height="100%"></embed> */}
-      <iframe src="/Manish_Kumar_Jha_Resume.pdf" width="100%" height="100%"></iframe>
+      <iframe src="https://drive.google.com/file/d/1qfStJ0xRXM8IxSfzSLefAQXE6jegfJer/view?usp=sharing" width="100%" height="100%"></iframe>
       </dialog>
     </>
   );
