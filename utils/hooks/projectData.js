@@ -4,7 +4,7 @@ export const projects = [
     date: "May, 2024",
     description:
       "An AI RAG(Retrival Augmented Generation) Assistant to answer queries about the Star Wars Universe. Tech: NextJS, Typescript, Langchain, Vercel AI SDK, OpenAI text-embedding-ada-002 & gpt-3.5-turbo models, AstraDB vector database.",
-    liveLink: "https://starwars-rag-bot.vercel.app/nelify",
+    liveLink: "https://starwars-rag-bot.vercel.app/netlify",
     sourceLink: "https://github.com/blueanchovy/starwars-rag-bot",
   },
   {
