@@ -1,11 +1,20 @@
 export const projects = [
   {
-    name: "StarWarsGPT",
-    date: "May, 2024",
+    name: "Mini Slack",
+    date: "January, 2022",
     description:
-      "An AI RAG(Retrival Augmented Generation) Assistant to answer queries about the Star Wars Universe. Tech: NextJS, Typescript, Langchain, Vercel AI SDK, OpenAI text-embedding-ada-002 & gpt-3.5-turbo models, AstraDB vector database.",
-    liveLink: "https://starwars-rag-bot.vercel.app/netlify",
-    sourceLink: "https://github.com/blueanchovy/starwars-rag-bot",
+      "Features: Create channel, Send Messages, Switch channels, Read other’s messages, Google Authentication Tech: ReactJS, Redux, React-Router, Styled Components, Material UI, Firestore Database, Firebase Hosting",
+    liveLink: "https://manish-slack-clone.web.app/",
+    sourceLink: "https://github.com/blueanchovy/slack-clone/",
+  },
+  
+  {
+    name: "PDF Signer",
+    date: "November, 2025",
+    description:
+    "An implementation of drag and drop pdf signature, allows uploading a pdf, drawing a signature, signing it and then downloading the signed pdf. Mobile compatible(tricky because mobile does not support iframes). Tech: NextJS, Typescript, pdfjs, pdf-lib, HTML Canvas",
+    liveLink: "https://pdf-sign-manish.vercel.app/",
+    sourceLink: "https://github.com/blueanchovy/scanovate-assignment",
   },
   {
     name: "Mini PayTM (FullStack)",
@@ -32,14 +41,29 @@ export const projects = [
     sourceLink: "https://github.com/blueanchovy/cred-clone",
   },
   {
-    name: "Mini Slack",
-    date: "January, 2022",
+    name: "Decentralized(Web3) Social Media Site",
+    date: "June, 2025",
     description:
-      "Features: Create channel, Send Messages, Switch channels, Read other’s messages, Google Authentication Tech: ReactJS, Redux, React-Router, Styled Components, Material UI, Firestore Database, Firebase Hosting",
-    liveLink: "https://manish-slack-clone.web.app/",
-    sourceLink: "https://github.com/blueanchovy/slack-clone/",
+      "A full-stack decentralized microblogging platform with Crypto wallet connection/authentication via RainbowKit, Functionality for users to create and update their profiles, Ability for users to post short text messages, A feed displaying posts from all users, Like and comment functionalities.",
+    liveLink: "netlify",
+    sourceLink: "https://github.com/blueanchovy/TheArenaAssignment",
   },
-
+  {
+    name: "Parking Lot System",
+    date: "May, 2025",
+    description:
+      "A command-line Node.js automated parking lot ticketing system that creates a lot with a specified number of slots, allows parking and removing cars (by registration number and color), viewing lot status, and querying registration numbers or slot numbers by color or by registration number.",
+    liveLink: "netlify",
+    sourceLink: "https://github.com/blueanchovy/parking_lot",
+  },
+  {
+    name: "StarWarsGPT",
+    date: "May, 2024",
+    description:
+      "An AI RAG(Retrival Augmented Generation) Assistant to answer queries about the Star Wars Universe. Tech: NextJS, Typescript, Langchain, Vercel AI SDK, OpenAI text-embedding-ada-002 & gpt-3.5-turbo models, AstraDB vector database.",
+    liveLink: "https://starwars-rag-bot.vercel.app/netlify",
+    sourceLink: "https://github.com/blueanchovy/starwars-rag-bot",
+  },
   {
     name: "Gmail UI Clone",
     date: "January, 2022",
@@ -47,6 +71,14 @@ export const projects = [
       "Features: User authentication via Google Account, Send mail(to self, updated in feed), Open received mail Tech: ReactJS, Redux, React-router, CSS3, Firestore Database, Firebase Hosting, Material UI",
     liveLink: "https://manish-p3-gc.web.app/",
     sourceLink: "https://github.com/blueanchovy/gmail-clone",
+  },
+  {
+    name: "Dogfight - A Threejs Airplane simulator",
+    date: "May, 2025",
+    description:
+      "A flying aeroplane simulator built with threejs, it allows you to fly a plane across three dimensions over a rocky terrain with a sparsely clouded sunny sky surrounded by a water body. Built using Cursor.",
+    liveLink: "netlify",
+    sourceLink: "https://github.com/blueanchovy/dogfight",
   },
   {
     name: "Startup Landing Page",
@@ -161,3 +193,4 @@ export const projects = [
     sourceLink: "https://github.com/blueanchovy/linkedin-clone",
   },
 ];
+
