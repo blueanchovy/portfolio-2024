@@ -1,5 +1,19 @@
 export const projects = [
   {
+    name: "Mini Claude Code",
+    date: "January, 2026",
+    description: "A toy version of Agentic Coding AI tool Claude Code using Google’s Gemini API. Chooses from a set of predefined functions to work on a task, repeats this tool calling until task is complete. Provided with a calculator repo inside to play with. Built with Python, Gemini API.",
+    liveLink: "netlify",
+    sourceLink: "https://github.com/blueanchovy/mini-claude-code/",
+  },
+  {
+    name: "Gmail Agent",
+    date: "February, 2026",
+    description: "A context aware Agentic AI application that uses AI to manage your Gmail with Gmail API to access your emails and the OpenAI API to process them with Email Management(View, search, and filter), Compose and Send(AI-powered composition), Email Detail View(view and repliy using natural language prompting). Built with Gmail API, OpenAI API and Copilotkit.",
+    liveLink: "netlify",
+    sourceLink: "https://github.com/blueanchovy/mail-agent/",
+  },
+  {
     name: "Mini Slack",
     date: "January, 2022",
     description:
@@ -7,7 +21,6 @@ export const projects = [
     liveLink: "https://manish-slack-clone.web.app/",
     sourceLink: "https://github.com/blueanchovy/slack-clone/",
   },
-  
   {
     name: "PDF Signer",
     date: "November, 2025",
@@ -39,6 +52,14 @@ export const projects = [
       "A fully responsive static clone of an Indian Startup‘s website (Cred): cred.club. Tech: ReactJS, CSS3, CSS media queries, Netlify Hosting",
     liveLink: "https://cred-clone-seven.vercel.app/",
     sourceLink: "https://github.com/blueanchovy/cred-clone",
+  },
+
+  {
+    name: "Toll Boot Mangement LLD in Typescript",
+    date: "February, 2026",
+    description: "A CLI-based toll management system built in TypeScript. Supports FASTag auto-deduction, toll passes, and manual cash payments. Implements multiple appropriate design patterns like Chain of Responsibility, Factory, Repository, Abstract class + polymorphism.",
+    liveLink: "netlify",
+    sourceLink: "https://github.com/blueanchovy/toll-management-LLD-in-TS-OOP/",
   },
   {
     name: "Decentralized(Web3) Social Media Site",
