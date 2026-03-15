@@ -9,7 +9,7 @@ export const projects = [
   {
     name: "Gmail Agent",
     date: "February, 2026",
-    description: "A context aware Agentic AI application that uses AI to manage your Gmail with Gmail API to access your emails and the OpenAI API to process them with Email Management(View, search, and filter), Compose and Send(AI-powered composition), Email Detail View(view and repliy using natural language prompting). Built with Gmail API, OpenAI API and Copilotkit.",
+    description: "A context aware Agentic AI application that uses AI to manage your Gmail with Gmail API to access your emails and the OpenAI API to process them with Email Management(View, search, and filter), Compose and Send(AI-powered composition), Email Detail View(view and reply using natural language prompting). Built with Gmail API, OpenAI API and Copilotkit.",
     liveLink: "netlify",
     sourceLink: "https://github.com/blueanchovy/mail-agent/",
   },
@@ -55,7 +55,7 @@ export const projects = [
   },
 
   {
-    name: "Toll Boot Mangement LLD in Typescript",
+    name: "Toll Booth Mangement LLD in Typescript",
     date: "February, 2026",
     description: "A CLI-based toll management system built in TypeScript. Supports FASTag auto-deduction, toll passes, and manual cash payments. Implements multiple appropriate design patterns like Chain of Responsibility, Factory, Repository, Abstract class + polymorphism.",
     liveLink: "netlify",
